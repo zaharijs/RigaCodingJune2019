@@ -18,19 +18,44 @@ public class DayOne {
      */
     public static void main(String[] args) {
     
-        System.out.println("Hello world!"); //ar enter
+      sum(2,3);
+       
+    }
+    private static void sum(int a, int b)
+    {
+        System.out.println(a+b);        
+    }
+    private static void example(){
+      System.out.println("Hello world!"); //ar enter
         System.out.println("Hello world!2"); //bez enter
        
             
     //mainigo tipi, tie pasi, kas C#    
         Scanner sc = new Scanner(System.in);
         System.out.println("Ievadiet tekstu!");
-        String text = sc.nextLine();
+        String text = sc.nextLine(); // ievade konsole
         
-        System.out.println(text);
+        int number  = sc.nextInt(); //ievadam skaitli
+        
+        System.out.println(text); //izvade
+        
+        if(text.equals("vii")){
+               //vai ir  vienads
+        }
+        if(!text.equals("vii")){
+               //vai nav vienads
+        }
         
         
         
-    }
+        if(number == 3){
+            //if piemers
+        }
+        else
+        {
+            
+        }
+        
+    }    
     
 }
