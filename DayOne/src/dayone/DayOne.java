@@ -5,6 +5,8 @@
  */
 package dayone;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kārlis
@@ -15,7 +17,20 @@ public class DayOne {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    
+        System.out.println("Hello world!"); //ar enter
+        System.out.println("Hello world!2"); //bez enter
+       
+            
+    //mainigo tipi, tie pasi, kas C#    
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ievadiet tekstu!");
+        String text = sc.nextLine();
+        
+        System.out.println(text);
+        
+        
+        
     }
     
 }
