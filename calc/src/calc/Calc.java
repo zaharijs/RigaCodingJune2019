@@ -16,24 +16,45 @@ public class Calc {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         //metodi, kurai padod ieksa 3 parametrus-
         // 2 int tipa skaitli
         //strings
         //ievada skaitlus, plusu vai minusu un tad izpildam darbibu
-        Scanner sc = new Scanner(System.in); 
+        {
+        int x;
+        int y;
+        String calc;
+
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter the first number: ");
+        x = input.nextInt();
+
+        System.out.print("Please enter the second number: ");
+        y = input.nextInt();
+
+        Scanner cl = new Scanner(System.in);
+
+        System.out.println("Please enter + or - : ");
+        calc = cl.next();
+
+        if (calc.equals("+"))
+        {
+            System.out.println("Your answer is: " + (x + y));
+        }
+        if  (calc.equals("-"))
+        {
+            System.out.println("Your answer is: " + (x - y));
+        }
+       }
+    }  }  
         
-        String txt = "x+y=";
         
-        System.out.println("Please enter number x:");
-        int x = sc.nextInt();
         
-        System.out.println("Please enter number y:");
-        int y = sc.nextInt();
+   
     
-        System.out.println(txt+(x+y));
-        
-                
-    }
+     
     
-}
