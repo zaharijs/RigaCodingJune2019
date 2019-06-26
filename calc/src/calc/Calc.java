@@ -17,7 +17,10 @@ public class Calc {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        //metodi, kurai padod ieksa 3 parametrus-
+        // 2 int tipa skaitli
+        //strings
+        //ievada skaitlus, plusu vai minusu un tad izpildam darbibu
         Scanner sc = new Scanner(System.in); 
         
         String txt = "x+y=";
