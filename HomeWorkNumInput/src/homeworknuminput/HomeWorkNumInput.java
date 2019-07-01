@@ -3,27 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package day3;
+package homeworknuminput;
 
 /**
  *
  * @author Kārlis
  */
-public class Day3 {
+public class HomeWorkNumInput {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//     NewClassExample example = new NewClassExample();
-//     example.sample1();
-//     NewClassExample.sample2();
-     Task tsk = new Task();
-     tsk.displayDay();
-     
-     tsk.factorial();
-     tsk.guessTheNumber();
-     
+        // TODO code application logic here
     }
     
 }

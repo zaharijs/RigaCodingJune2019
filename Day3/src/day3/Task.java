@@ -52,5 +52,43 @@ public class Task {
             System.out.println("Error2!");
         }
     }
+    public void factorial(){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Ievadiet skaitli!");
+        int number;
+        try{
+        
+            number = sc.nextInt();
+            int  result = 1;
+            
+            for(int i = 1; i<=number; i++){
+                result = result*i;
+            }
+            System.out.println("Rezultats ir " + result);
+        }catch(Exception ex){
+            System.out.println("Jaievada skaitlis!");
+        }
+        
+        
+        
+}
+    public void guessTheNumber(){
+        System.out.println("Ievadiet skaitli!");
+        Scanner sc = new Scanner(System.in);
+        
+        int numberToGuess = sc.nextInt();
+        int number;
+        
+        do{
+            System.out.println("Ievadiet skaitli!");
+            number = sc.nextInt();
+            if(number!=numberToGuess){
+                System.out.println("Neuzminejat, meginiet vel!");
+            }
+        }while(numberToGuess!=number);
+        
+        System.out.println("Veiksmigi uzminejat!");
+    }            
 }
 
