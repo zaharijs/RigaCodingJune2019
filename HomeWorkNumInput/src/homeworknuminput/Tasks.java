@@ -5,10 +5,32 @@
  */
 package homeworknuminput;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kārlis
  */
 public class Tasks {
+    
+    public void enterNum(){
+    Scanner sc = new Scanner(System.in);
+    
+    
+        System.out.println("Enter number: ");
+        int number;
+        
+        number = sc.nextInt();
+        do{
+        System.out.println("Enter more y/n?");
+        char input;
+        
+        input = sc.next();
+            if(input == y){
+                
+            }while(input == n)
+        }
+        
+    }
     
 }
