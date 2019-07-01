@@ -16,6 +16,9 @@ public class Day4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ArrayTasks ex = new ArrayTasks();
+        ex.masivs();
+        
     }
     
 }
