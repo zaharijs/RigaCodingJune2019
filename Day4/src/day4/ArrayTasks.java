@@ -94,7 +94,7 @@ public void listExample(){
         System.out.println(value);
     }
     
-    lst.
+    
     
 }
 }
