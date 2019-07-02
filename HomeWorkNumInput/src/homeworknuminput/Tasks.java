@@ -12,25 +12,30 @@ import java.util.Scanner;
  * @author Kārlis
  */
 public class Tasks {
-    
-    public void enterNum(){
-    Scanner sc = new Scanner(System.in);
-    
-    
-        System.out.println("Enter number: ");
+
+    public void enterNum() {
+        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner (System.in);
+        
+        
         int number;
         
-        number = sc.nextInt();
-        do{
-        System.out.println("Enter more y/n?");
-        char input;
-        
-        input = sc.next();
-            if(input == y){
+        do {
+
+            System.out.println("Enter number: ");
+            number = sc.nextInt();
+            
+            System.out.println("Enter more y/n?");
+            
+            if(input.equals("n")){
                 
-            }while(input == n)
-        }
+            
+            }
+            
+        }while(input.equals("y"));
         
-    }
     
-}
+           
+        }
+    
+    }
