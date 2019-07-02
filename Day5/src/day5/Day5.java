@@ -14,6 +14,13 @@ public class Day5 {
     /**
      * @param args the command line arguments
      */
+    
+    
+    //1.Uztaisit klasi ar nosaukumu Triangle
+    //2.Metodes get ,set ,katrai no trijstura malam
+    //3.metode, lai var dabut perimetru.
+    //4.parbaudit perimetru vai nav nulle
+    //.parbaudi taisam ta lai prasa ievadit kamer nav pareizi while
  public static void main(String[] args) {
         // TODO code application logic here
         exampleHumans();
@@ -21,7 +28,13 @@ public class Day5 {
         hm.dateBorn();
        
     }
+    public static void perimetr (){
     
+    
+    
+    
+    
+    }
     public static void examples1(){
         Example ex = new Example();
         ex.setField1(4);

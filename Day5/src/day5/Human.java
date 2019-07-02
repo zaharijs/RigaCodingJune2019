@@ -12,57 +12,66 @@ import java.util.Scanner;
  * @author Kārlis
  */
 public class Human {
-    
+
     private String name = "";
     private String surname = "";
     private int age = 25;
-    
-    public void setName(String name){
-        if(this.name == ""){
+
+    public void setName(String name) {
+        if (name.equals("")) {
             System.out.println("Ievadiet vardu!");
+            Scanner sc = new Scanner(System.in);
+            name = sc.next();
         }
-        
-        this.name = name;
-        
+
+        for (int i = 0; i < name.length(); i++) {
+            if (Character.isDigit(name.charAt(i))) {
+                this.name = name;
+            }
+        }
+        if (Character.isLowerCase(0)) {
+            Character.toUpperCase(0);
+        }
+
     }
-    
-    public void setSurname(String surname){
+
+    public void setSurname(String surname) {
         this.surname = surname;
     }
-    
-    public void setAge(int age){
-        if(age < 0){
+
+    public void setAge(int age) {
+        if (age < 0) {
             age = 0;
         }
         this.age = age;
     }
-    
-    public String getName(){
-        if(this.name.equals("")){
+
+    public String getName() {
+        if (this.name.equals("")) {
             System.out.println("Ievadiet vardu!");
             Scanner sc = new Scanner(System.in);
             this.name = sc.next();
         }
         return name;
     }
-    
-    public String getSurname(){
-        if(this.name.equals("")){
+
+    public String getSurname() {
+        if (this.name.equals("")) {
             return "NavDatu!!";
         }
         return surname;
     }
-        
-    
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
-   public void dateBorn(){
-       Scanner sc = new Scanner(System.in);
-       System.out.println("Enter current date");
-       
-       int date = sc.nextInt();
-       System.out.println(date - this.age);
-   }
-   
+
+    public void dateBorn() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter current date");
+
+        int date = sc.nextInt();
+        System.out.println(date - this.age);
+    }
+
 }
