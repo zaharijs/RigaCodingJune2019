@@ -23,17 +23,17 @@ public class Day5 {
     //.parbaudi taisam ta lai prasa ievadit kamer nav pareizi while
  public static void main(String[] args) {
         // TODO code application logic here
-        exampleHumans();
-        Human hm = new Human();
-        hm.dateBorn();
+//        exampleHumans();
+//        Human hm = new Human();
+//        hm.dateBorn();
+       perimetr();
        
     }
     public static void perimetr (){
+    Triangle tr = new Triangle();
     
-    
-    
-    
-    
+       int perimetr = a + b + c();
+
     }
     public static void examples1(){
         Example ex = new Example();

@@ -5,6 +5,8 @@
  */
 package day5;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kārlis
@@ -16,27 +18,36 @@ public class Triangle {
     private int c = 0;
 
     public void setA(int a) {
-        this.a = a;
+        
+        System.out.println("Enter a: ");
+        Scanner sc = new Scanner(System.in);
+        this.a = sc.nextInt();
 
     }
 
-    public int getA(){
-    return a;
+    public int getA() {
+        return a;
     }
 
     public void setB(int b) {
-        this.b = b;
+        
+        System.out.println("Enter B: ");
+        Scanner sc = new Scanner(System.in);
+        this.b = sc.nextInt();
     }
 
-    public int getB(){
-    return b;
+    public int getB() {
+        return b;
     }
 
     public void setC(int c) {
-        this.c = c;
+        
+        System.out.println("Enter C: ");
+        Scanner sc = new Scanner(System.in);
+        this.c = sc.nextInt();
     }
 
-    public int getC(){
-    return c;
-    }        
+    public int getC() {
+        return c;
+    }
 }
