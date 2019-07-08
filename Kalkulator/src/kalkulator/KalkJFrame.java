@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package day6;
+package kalkulator;
 
 /**
  *
  * @author Kārlis
  */
-public class TestFrame extends javax.swing.JFrame {
+public class KalkJFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form TestFrame
+     * Creates new form KalkJFrame
      */
-    public TestFrame() {
+    public KalkJFrame() {
         initComponents();
     }
 
@@ -27,17 +27,23 @@ public class TestFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblOutput = new javax.swing.JLabel();
-        btbPushme = new javax.swing.JButton();
+        btbButton = new javax.swing.JButton();
+        lblText = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblOutput.setText("Teksts");
-
-        btbPushme.setText("Piespied mani");
-        btbPushme.addActionListener(new java.awt.event.ActionListener() {
+        btbButton.setText("Nospied");
+        btbButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btbPushmeActionPerformed(evt);
+                btbButtonActionPerformed(evt);
+            }
+        });
+
+        lblText.setText("Ievadi vārdu");
+        lblText.setToolTipText("");
+        lblText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lblTextActionPerformed(evt);
             }
         });
 
@@ -46,41 +52,37 @@ public class TestFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btbPushme, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(453, Short.MAX_VALUE))
+                .addGap(84, 84, 84)
+                .addComponent(btbButton, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(88, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblText)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(lblOutput, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(lblText, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btbPushme, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(240, Short.MAX_VALUE))
+                .addComponent(btbButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(67, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btbPushmeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbPushmeActionPerformed
-            lblOutput.setText("Izmainitais teksts");
+    private void btbButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbButtonActionPerformed
         
-        String textFromLabel = lblOutput.getText();
+        String textFromField = lblText.getText();
         
-        //lai konvertetu uz int
-        try{
-           int number = Integer.valueOf(textFromLabel); 
-           double floatingPoint = Double.valueOf(textFromLabel);
-        }catch(Exception ex){
-            //TODO exception handling
-            SampleClass sample = new SampleClass();
-            lblOutput.setText(sample.sampleMethod());
-        }
-            
-    }//GEN-LAST:event_btbPushmeActionPerformed
+                
+    }//GEN-LAST:event_btbButtonActionPerformed
+
+    private void lblTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblTextActionPerformed
+        System.out.println(lblText);
+    }//GEN-LAST:event_lblTextActionPerformed
 
     /**
      * @param args the command line arguments
@@ -99,26 +101,29 @@ public class TestFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TestFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KalkJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TestFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KalkJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TestFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KalkJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TestFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(KalkJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TestFrame().setVisible(true);
+                new KalkJFrame().setVisible(true);
+                
+                
+                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btbPushme;
-    private javax.swing.JLabel lblOutput;
+    private javax.swing.JButton btbButton;
+    private javax.swing.JTextField lblText;
     // End of variables declaration//GEN-END:variables
 }
