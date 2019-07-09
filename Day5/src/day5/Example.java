@@ -7,9 +7,10 @@ package day5;
 
 /**
  *
- * @author Kārlis
+ * @author Marti
  */
 public class Example {
+    
     private int field1 = 5;
     private int field2 = 6;
     

@@ -7,34 +7,22 @@ package day5;
 
 /**
  *
- * @author Kārlis
+ * @author Marti
  */
 public class Day5 {
 
     /**
      * @param args the command line arguments
      */
-    
-    
-    //1.Uztaisit klasi ar nosaukumu Triangle
-    //2.Metodes get ,set ,katrai no trijstura malam
-    //3.metode, lai var dabut perimetru.
-    //4.parbaudit perimetru vai nav nulle
-    //.parbaudi taisam ta lai prasa ievadit kamer nav pareizi while
- public static void main(String[] args) {
+    public static void main(String[] args) {
         // TODO code application logic here
-//        exampleHumans();
-//        Human hm = new Human();
-//        hm.dateBorn();
-       perimetr();
-       
+        //Uzdevums
+        //1. Uztaisit klasi ar nosaukumu Triangle
+        //2. metodes get, set, katrai no trijstura malam
+        //3. metode, lai var dabut perimetru.
+        // * parbaudi taisam ta lai prasa ievadit kamer nav pareizi while
     }
-    public static void perimetr (){
-    Triangle tr = new Triangle();
     
-       int perimetr = a + b + c();
-
-    }
     public static void examples1(){
         Example ex = new Example();
         ex.setField1(4);
@@ -49,19 +37,21 @@ public class Day5 {
 //        Example ex2 = new Example();
 //        ex2.field1 = 13;
 //        System.out.println(ex.field1);
+
+
+        
     }
     
     private static void exampleHumans(){
         
         Human peteris = new Human();
         
-        peteris.setAge(-1);
-        peteris.setName("Peteris");
+        peteris.setAge(67);
+        peteris.setName("peteris");
         peteris.setSurname("Ozolins");
+        peteris.printYearOfBirth();
         
-        
-        
+        System.out.println(peteris.getName() + " " + peteris.getSurname());
     }
-  
+    
 }
-
